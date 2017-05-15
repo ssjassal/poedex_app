@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<% include ../partials/head %>
+</head>
+<header>
+	<% include ../partials/header %>
+</header>
+<body>
+		<main>
+			<h1>Create a New Pokemon</h1>
+				<form class="container" action="/pokemon" method="POST">
+					<div class="row">
+						<div class="six columns">
+							Name:<input id="name" type="text" name="name"/> <br>
+						</div>
+						<div class="six columns">
+							ID:<input  id="id" type="text" name="id"/> <br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="six columns">
+							Image:<input  id="img" type="text" name="img"/> <br>
+						</div>
+						<div class="six columns">
+							Type: <input  id="type" type="text" name="type"/> <br>
+						</div>
+					</div>
+				</form>
+				<input class="button-primary" type="submit" value="Create Pokemon"/>
+		</div>
+		</main>
+
+</body>
+</html>

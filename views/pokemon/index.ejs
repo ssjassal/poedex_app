@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/head %>
+</head>
+<header>
+	<% include ../partials/header %>
+</header>
+<body>
+<main>
+  <h1>Pokemon Index</h1>
+  <button class="btn btn-primary"><a class-"button-primary" href="/pokemon/create">Create a New Pokemon</a></button><br>
+    <ul>
+    <% for(var i = 0; i < pokemon.length; i++){ %>
+      <a href="/pokemon/<%=i%>"><img class="size" src="<%= pokemon[i].img%>"></img></a>
+
+      <% } %>
+    </ul>
+    <button class="btn btn-primary"><a href="/pokemon/create">Create a New Pokemon</a></button>
+</main>
+  </body>
+  </html>

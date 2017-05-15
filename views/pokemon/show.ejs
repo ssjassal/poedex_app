@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+</head>
+<header>
+	<% include ../partials/header %>
+</header>
+<body>
+  <section>
+  <main>
+      <h1>Gotta Catch Em All!</h1>
+      <section class="stats">
+        <h3>NAME: <%=pokemon.name; %></h3> <br><br><br>
+        <img class="animation-target showPokemon" src="<%=pokemon.img; %>" alt=""> <br><br><br><br><br>
+        <%=pokemon.img; %> <br>
+        ID: <%=pokemon.id; %> <br>
+        TYPE: <%=pokemon.type; %> <br>
+      </section>
+    <button><a href="/pokemon/<%=index;%>/edit">Edit</a></button><br>
+          <form action="/pokemon/index?_method=DELETE" method="POST">
+          <input type="submit" value="Disappeared" />
+        </form>
+        <a href="/pokemon">Back to Pokemon Collection</a>
+</main>
+      </section>
+    </body>
+    </html>
